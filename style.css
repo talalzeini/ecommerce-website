@@ -264,3 +264,50 @@ body{
 .hide{
     display: none;
 }
+.new-products{
+    margin:50px 0;
+}
+.website-features{
+    margin:60px 0;
+}
+.website-features img{
+    width:20%;
+}
+.feature-text{
+    margin-top: 10px;
+    float:right;
+    padding-left: 20px;
+    width: 80%;
+}
+.feature-box{
+    padding-top: 20px;
+}
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+.footer h1{
+    font-size:15px;
+    margin: 25px 0;
+}
+.footer p{
+    font-size:12px;
+}
+.copyright{ 
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.footer hr{
+    margin-top:10px;
+    background: white;
+}
+.footer-image img{
+    width:150px;
+}
+.footer .row .fa{
+    padding-right:20px;
+    font-size: 15px;
+}
