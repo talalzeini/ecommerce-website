@@ -91,14 +91,19 @@ body{
 }
 
 .side-menu{
-    height:79%;
     width:15%;
     font-size: 14px;
+    height: 700px;
     float: left;
     z-index: 2;
     background-color: #ddd;
 }
+img{
+    height: 700px;
+    width:15%;
+}
 .side-menu ul{
+    height: 79%;
     margin-left: 10px;
 }
 .side-menu ul li{
@@ -155,4 +160,24 @@ body{
 #menu-btn{
     display: block;
 }
+}
+.slider{
+    widows: 85%;
+    margin-left: 15%;
+    padding:0 10px;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+    z-index: 1 !important;
+}
+@media only screen and (max-width:980px){
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+    img{
+        height:450px;
+    }
 }
