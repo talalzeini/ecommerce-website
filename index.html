@@ -177,7 +177,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img src="images/ipod 3.jpg" alt="">
+                <img src="images/black.jpg" class="" id="black" alt="">
+                <img src="images/green.jpg" class="hide" id="green" alt="">
+                <img src="images/yellow.jpg" class="hide" id="yellow" alt="">
+                <img src="images/purple.jpg" class="hide" id="purple" alt="">
+                <img src="images/red.jpg" class="hide" id="red" alt="">
+                <img src="images/white.jpg" class="hide" id="white" alt="">
             </div>
             <div class="col-md-4">
                 <img src="images/yeez.jpg" alt="">
@@ -299,7 +304,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                            <h3>Fitness Watch</h3>
+                            <h3>Leather Watch</h3>
                             <h5>$23.00</h5>
                     </div>
             </div>
@@ -317,6 +322,7 @@
 
 
     <script>
+        setTimeout(function() { blackToGreen(); }, 3000);
         function openmenu(){
             document.getElementById("side-menu").style.display="block";
             document.getElementById("menu-btn").style.display="none";
@@ -326,6 +332,36 @@
             document.getElementById("side-menu").style.display="none";
             document.getElementById("menu-btn").style.display="block";
             document.getElementById("close-btn").style.display="none";
+        }
+        function blackToGreen(){
+            document.getElementById("black").classList.add("hide");
+            document.getElementById("green").classList.remove("hide");
+            setTimeout(function() { greenToYellow(); }, 3000);
+        }
+        function greenToYellow(){
+            document.getElementById("green").classList.add("hide");
+            document.getElementById("yellow").classList.remove("hide");
+            setTimeout(function() { yellowToPurple(); }, 3000);
+        }
+        function yellowToPurple(){
+            document.getElementById("yellow").classList.add("hide");
+            document.getElementById("purple").classList.remove("hide");
+            setTimeout(function() { purpleToRed(); }, 3000);
+        }
+        function purpleToRed(){
+            document.getElementById("purple").classList.add("hide");
+            document.getElementById("red").classList.remove("hide");
+            setTimeout(function() { redToWhite(); }, 3000);
+        }
+        function redToWhite(){
+            document.getElementById("red").classList.add("hide");
+            document.getElementById("white").classList.remove("hide");
+            setTimeout(function() { whiteToBlack(); }, 3000);
+        }
+        function whiteToBlack(){
+            document.getElementById("white").classList.add("hide");
+            document.getElementById("black").classList.remove("hide");
+            setTimeout(function() { blackToGreen(); }, 3000);
         }
     </script>
 </body>
