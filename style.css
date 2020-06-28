@@ -311,3 +311,50 @@ body{
     padding-right:20px;
     font-size: 15px;
 }
+.single-product{
+    margin-top: 70px;
+}
+.new-arrival{
+    background: green;
+    color:white;
+    width:50px;
+    font-weight: bold;
+    margin-top:20px;
+}
+.col-md-7 h2{
+    color:#555;
+}
+.single-product .fa{
+    color:orange;
+}
+.single-product .price{
+    color:orange;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.single-product input{
+    border:1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    width: 30px;
+    text-align: center;
+}
+.single-product .btn-primary{
+    background: orange !important;
+    color: white;
+    font-size: 15px;
+    box-shadow: none !important;
+    margin-left: 20px;
+    border: none;
+}
+.product-description h6{
+    margin-top: 50px;
+    color: orange;
+}
+.product-description p{
+    margin-top: 30px;
+}
+.product-description hr{
+    margin-bottom: 50px;
+}
