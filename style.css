@@ -1,11 +1,11 @@
 
+
 *{
     margin:0;
     padding:0;
 }
 body{
     background: #f1f3f4;
-    font-family: sans-serif;
 }
 .top-nav-bar{
     height: 57px;
@@ -13,13 +13,13 @@ body{
     position: sticky;
     background: white;
     margin-bottom: 20px;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #1ab2ff;
     z-index: 2;
 }
 .form-control{
     margin-top: 9px;
     margin-left:30px;
-    border:1px solid orange !important;
+    border:1px solid #1ab2ff !important;
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-bottom-right-radius: 0px !important;
@@ -27,8 +27,8 @@ body{
     box-shadow: 0 !important;
 }
 .input-group-text{
-    background: orange !important;
-    border:1px solid orange !important;
+    background: #1ab2ff !important;
+    border:1px solid #1ab2ff !important;
     margin:8.5px 10px 3px 0;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
@@ -57,7 +57,7 @@ body{
     list-style-type: none;
     padding:15px 35px;
     text-align: center;
-    background-color: orange;
+    background-color: #1ab2ff;
     cursor: pointer;
 }
 .menu-bar ul li a{
@@ -113,7 +113,7 @@ body{
     cursor: pointer;
 }
 .side-menu ul li:hover{
-    color: orange;
+    color: #1ab2ff;
 }
 .side-menu ul li ul{
     display: none;
@@ -137,7 +137,7 @@ body{
 #menu-btn, #close-btn{
     font-size: 30px;
     margin: 10px;
-    color:orange;
+    color:#1ab2ff;
     display: none;
 }
 @media only screen and (max-width:980px){
@@ -195,7 +195,7 @@ body{
     transform: scale(1.1);
 }
 .title-box{
-    background-color: orange;
+    background-color: #1ab2ff;
     color:white;
     width:180px;
     padding: 4px 10px;
@@ -208,7 +208,7 @@ body{
 }
 .title-box::after{
     content:'';
-    border-top: 40px solid orange;
+    border-top: 40px solid #1ab2ff;
     border-right: 50px solid transparent;
     display: flex;
     position: absolute;
@@ -250,7 +250,7 @@ body{
 
 
 .product-bottom .fa{
-    color:orange;
+    color:#1ab2ff;
     font-size: 10px;
 }
 .product-bottom h3{
@@ -325,10 +325,10 @@ body{
     color:#555;
 }
 .single-product .fa{
-    color:orange;
+    color:#1ab2ff;
 }
 .single-product .price{
-    color:orange;
+    color:#1ab2ff;
     font-size: 26px;
     font-weight: bold;
     padding-top: 20px;
@@ -341,7 +341,7 @@ body{
     text-align: center;
 }
 .single-product .btn-primary{
-    background: orange !important;
+    background: #1ab2ff !important;
     color: white;
     font-size: 15px;
     box-shadow: none !important;
@@ -350,7 +350,7 @@ body{
 }
 .product-description h6{
     margin-top: 50px;
-    color: orange;
+    color: #1ab2ff;
 }
 .product-description p{
     margin-top: 30px;
