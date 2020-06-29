@@ -100,7 +100,7 @@ body{
 }
 .carousel-item img{
     height: 700px;
-    width:15%;
+    width:700px;
 }
 .side-menu ul{
     height: 79%;
@@ -166,9 +166,6 @@ body{
     margin-left: 15%;
     padding:0 10px;
 }
-.carousel{
-    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
-}
 .carousel-indicators{
     z-index: 1 !important;
 }
@@ -179,6 +176,9 @@ body{
     }
     .carousel-item img{
         height:450px;
+        width:450px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
