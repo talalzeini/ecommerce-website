@@ -17,6 +17,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 <body>
     <div class="top-nav-bar">
@@ -50,18 +52,7 @@
                                 <li>Leather Watch</li>
                             </ul>
                         </li>
-                        <li>New Arrivals<i class="fa fa-angle-right"></i>
-                            <ul>
-                                <li>Airpods Pro</li>
-                                <li>Nike Air Force SE</li>
-                                <li>A&F Shirt for Men</li>
-                                <li>Google Home Speaker</li>
-                                <li>FIFA 20</li>
-                                <li>Game of Thrones Books</li>
-                                <li>Pop! Rachel Green</li>
-                                <li>Digital Watch</li>
-                            </ul>
-                        </li>
+                        
                         <li>On Sale<i class="fa fa-angle-right"></i>
                             <ul>
                                 <li>Black Watch</li>
@@ -187,7 +178,7 @@
         <div class="row">
             <div class="col-md-3">
                         <div class="product-top">
-                            <a href="product.html"><img src="https://ae01.alicdn.com/kf/HTB14p1wlYZnBKNjSZFKq6AGOVXa2.jpg"></a>
+                            <a onclick="func()"><img id="blackWatch" src="https://ae01.alicdn.com/kf/HTB14p1wlYZnBKNjSZFKq6AGOVXa2.jpg" ></a>
                                 <div class="overlay-right">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-eye"></i>
@@ -215,7 +206,7 @@
 
             <div class="col-md-3">
                     <div class="product-top">
-                        <img src="https://i.pinimg.com/originals/2c/e5/06/2ce506d54752df2779afcddd8b6b75f5.jpg">
+                       <img src="https://i.pinimg.com/originals/2c/e5/06/2ce506d54752df2779afcddd8b6b75f5.jpg">
                             <div class="overlay-right">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop">
                                     <i class="fa fa-eye"></i>
@@ -242,7 +233,7 @@
 
             <div class="col-md-3">
                     <div class="product-top">
-                        <img src="https://e3a2x2w3.stackpathcdn.com/wp-content/uploads/2019/05/Yeezy-glow2s12w4.jpg">
+                 <img src="https://e3a2x2w3.stackpathcdn.com/wp-content/uploads/2019/05/Yeezy-glow2s12w4.jpg">
                             <div class="overlay-right">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop">
                                     <i class="fa fa-eye"></i>
@@ -692,48 +683,14 @@
 
 
 
-    <script>
-        setTimeout(function() { blackToGreen(); }, 3000);
-        function openmenu(){
-            document.getElementById("side-menu").style.display="block";
-            document.getElementById("menu-btn").style.display="none";
-            document.getElementById("close-btn").style.display="block";
-        }
-        function closemenu(){
-            document.getElementById("side-menu").style.display="none";
-            document.getElementById("menu-btn").style.display="block";
-            document.getElementById("close-btn").style.display="none";
-        }
-        function blackToGreen(){
-            document.getElementById("black").classList.add("hide");
-            document.getElementById("green").classList.remove("hide");
-            setTimeout(function() { greenToYellow(); }, 3000);
-        }
-        function greenToYellow(){
-            document.getElementById("green").classList.add("hide");
-            document.getElementById("yellow").classList.remove("hide");
-            setTimeout(function() { yellowToPurple(); }, 3000);
-        }
-        function yellowToPurple(){
-            document.getElementById("yellow").classList.add("hide");
-            document.getElementById("purple").classList.remove("hide");
-            setTimeout(function() { purpleToRed(); }, 3000);
-        }
-        function purpleToRed(){
-            document.getElementById("purple").classList.add("hide");
-            document.getElementById("red").classList.remove("hide");
-            setTimeout(function() { redToWhite(); }, 3000);
-        }
-        function redToWhite(){
-            document.getElementById("red").classList.add("hide");
-            document.getElementById("white").classList.remove("hide");
-            setTimeout(function() { whiteToBlack(); }, 3000);
-        }
-        function whiteToBlack(){
-            document.getElementById("white").classList.add("hide");
-            document.getElementById("black").classList.remove("hide");
-            setTimeout(function() { blackToGreen(); }, 3000);
-        }
-    </script>
+<script> 
+var blackWatchURL = document.getElementById("blackWatch").src;
+sessionStorage.setItem("blackWatchUrl", blackWatchURL);
+ 
+function func(){
+
+            window.location = "product.html";
+}
+</script>
 </body>
 </html>

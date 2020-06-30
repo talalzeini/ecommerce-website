@@ -14,6 +14,8 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 <body>
 
@@ -41,8 +43,8 @@
         <div class="row">
             <div class="col-md-5">
                     <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/8b7bf5f6cb1d05bb812e08e0af95c58c80ddb354/FunKo-POP%21-Deluxe-Game-of-Thrones-Daenerys-Targaryen-on-Throne-6%22-Vinyl-Figure.jpg" class="d-block" style="width:400px; height:400px;">
+                            <div class="carousel-item active"  >
+                                <img id="mainProduct" src="" class='d-block' style='width:400px; height:400px;'>
                             </div>
                     </div>
             </div>
@@ -232,18 +234,11 @@
                     <p class="copyright">Made by <a href="http://talalzeini.com/" style="color:white;text-decoration: none; font-weight: bold;">Talal Zeini</a></p>
     </div>
 </section>
-    <script>
-        setTimeout(function() { blackToGreen(); }, 3000);
-        function openmenu(){
-            document.getElementById("side-menu").style.display="block";
-            document.getElementById("menu-btn").style.display="none";
-            document.getElementById("close-btn").style.display="block";
-        }
-        function closemenu(){
-            document.getElementById("side-menu").style.display="none";
-            document.getElementById("menu-btn").style.display="block";
-            document.getElementById("close-btn").style.display="none";
-        }
-    </script>
+  
+        <script> 
+var blackWatchURL = sessionStorage.getItem("blackWatchUrl");
+document.getElementById("mainProduct").src = blackWatchURL;
+
+        </script>
 </body>
 </html>  
