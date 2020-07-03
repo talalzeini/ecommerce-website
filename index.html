@@ -19,8 +19,12 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        
+        
     </head>
-<body>
+<body> 
+    <p id="navHelp"></p>
     <div class="top-nav-bar">
             <div class="search-box">
                     <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
@@ -40,7 +44,7 @@
             </div>
     </div>
 
-
+<div id="not-single-product">
     <section class="header">
             <div class="side-menu" id="side-menu">
                 <ul>
@@ -118,7 +122,6 @@
             </div>
     </section>
 
-
 <section class="featured-categories">
     <div class="container">
         <div class="title-box">
@@ -178,7 +181,7 @@
         <div class="row">
             <div class="col-md-3">
                         <div class="product-top">
-                            <a onclick="func()"><img id="blackWatch" src="https://ae01.alicdn.com/kf/HTB14p1wlYZnBKNjSZFKq6AGOVXa2.jpg" ></a>
+                            <a href="#navHelp" onclick="goToProduct(), blackWatch()"><img id="blackWatch" src="https://ae01.alicdn.com/kf/HTB14p1wlYZnBKNjSZFKq6AGOVXa2.jpg"></a>
                                 <div class="overlay-right">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-eye"></i>
@@ -196,7 +199,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
                                 <h3>Black Watch</h3>
                                 <h5>$32.00</h5>
@@ -206,7 +209,7 @@
 
             <div class="col-md-3">
                     <div class="product-top">
-                       <img src="https://i.pinimg.com/originals/2c/e5/06/2ce506d54752df2779afcddd8b6b75f5.jpg">
+                        <a href="#navHelp" onclick="goToProduct(), HollisterShirt()"><img id="HollisterShirt" src="https://i.pinimg.com/originals/2c/e5/06/2ce506d54752df2779afcddd8b6b75f5.jpg"></a>
                             <div class="overlay-right">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop">
                                     <i class="fa fa-eye"></i>
@@ -233,7 +236,7 @@
 
             <div class="col-md-3">
                     <div class="product-top">
-                 <img src="https://e3a2x2w3.stackpathcdn.com/wp-content/uploads/2019/05/Yeezy-glow2s12w4.jpg">
+                        <a href="#navHelp" onclick="goToProduct(), YeezyGreen()"><img id="YeezyGreen" src="https://e3a2x2w3.stackpathcdn.com/wp-content/uploads/2019/05/Yeezy-glow2s12w4.jpg"></a>
                             <div class="overlay-right">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop">
                                     <i class="fa fa-eye"></i>
@@ -260,7 +263,7 @@
 
             <div class="col-md-3">
                     <div class="product-top">
-                        <img src="https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/12247/119813/CURREN-8301-Top-Brand-Luxury-watch-men-date-display-Leather-creative-Quartz-Wrist-Watches-relogio-masculino__72517.1538633440.jpg?c=2?imbypass=on">
+                        <a href="#navHelp" onclick="goToProduct(), LeatherWatch()"><img id="LeatherWatch" src="https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/12247/119813/CURREN-8301-Top-Brand-Luxury-watch-men-date-display-Leather-creative-Quartz-Wrist-Watches-relogio-masculino__72517.1538633440.jpg?c=2?imbypass=on"></a>
                             <div class="overlay-right">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop">
                                     <i class="fa fa-eye"></i>
@@ -600,6 +603,167 @@
     </div>
 </section>
 
+</div>
+<div id="help"></div>
+
+<div class="hide" id="single-product">
+<section class="single-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                    <div class="carousel-inner">
+                            <div class="carousel-item active"  >
+                                <img id="mainProduct" src="" class='d-block' style='width:400px; height:400px;'>
+                            </div>
+                    </div>
+                </div>
+            <div class="col-md-7">
+                <p class="new-arrival text-center" id="condition"></p> 
+                <h2 id="productName"></h2>
+                <p id="productCode" ></p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i id="lastStar" class="fa"></i>
+                <p class="price" id="productPrice"></p>
+                <p><b>Availability:</b> In Stock</p>
+                <p><b>Brand:</b><span id="productCompany"></span></p>
+                <label>Quantity:</label>
+                <input type="text" value="1"/>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-description">
+    <div class="container">
+        <h6>Product Designer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam sint quis odio nobis optio, distinctio placeat nisi assumenda possimus saepe necessitatibus quos provident suscipit voluptatibus, molestiae recusandae similique ut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam neque vero veritatis consequuntur perspiciatis amet explicabo temporibus non dolores, laborum, perferendis voluptatem corporis nesciunt nobis fugit aperiam corrupti at nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, officia iusto. Minus delectus mollitia ratione porro ab! Eaque, voluptatem placeat qui quo, sit esse ullam vero ducimus sint, cum officiis.</p>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="title-box">
+            <h2>Similar</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                        <div class="product-top">
+                            <img src="https://ae01.alicdn.com/kf/HTB14p1wlYZnBKNjSZFKq6AGOVXa2.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                        <i class="fa fa-eye"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                        </div>
+                        
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                                <h3>Fitness Watch</h3>
+                                <h5>$40.00</h5>
+                        </div>
+
+            </div>
+
+            <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://i.pinimg.com/originals/2c/e5/06/2ce506d54752df2779afcddd8b6b75f5.jpg">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                    </div>
+                    
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                            <h3>Fitness Watch</h3>
+                            <h5>$57.00</h5>
+                    </div>
+            </div>
+
+            <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://e3a2x2w3.stackpathcdn.com/wp-content/uploads/2019/05/Yeezy-glow2s12w4.jpg">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                    </div>
+                    
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                            <h3>Fitness Watch</h3>
+                            <h5>$66.00</h5>
+                    </div>
+            </div>
+
+            <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/12247/119813/CURREN-8301-Top-Brand-Luxury-watch-men-date-display-Leather-creative-Quartz-Wrist-Watches-relogio-masculino__72517.1538633440.jpg?c=2?imbypass=on">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                    </div>
+                    
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                            <h3>Leather Watch</h3>
+                            <h5>$23.00</h5>
+                    </div>
+            </div>
+            
+        </div>
+</section>
+</div>
+
+
+
+
+
 
 
 
@@ -646,6 +810,40 @@
 </section>
 
 
+<!-- contact form starts here -->
+<section id="contact">
+    <div class="container">
+        <h2 style="color:#1ab2ff">Contact Us</h2>
+            <div class="flex">
+                    <div id="form-container">
+                            <form  action="https://formspree.io/talalzeini@gmail.com" method="POST">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="name" name="name" />
+                                <label for="email">Email</label>
+                                <input type="text" class="email" id="email" name="email" />
+                                <label for="subject">Subject</label>
+                                <input type="text" class="subject" id="subject" name="subject"/>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="message" placeholder="Write your message here..."></textarea>
+                                <div class="status"></div>
+                                <button class="submit">Send Message</button>
+                            </form>
+                    </div>
+
+                            <div id="address-container">
+                                    <label>Phone</label>
+                                    <a>+1 (408) 818 0894</a>
+                                    <label>Email Address</label>
+                                    <a>talalzeinil@gmail.com</a>
+                            </div>
+            </div>
+    </div>
+</section>
+<!-- contact form ends here -->
+
+
+
+
 <section class="footer">
     <div class="container text-center">
         <div class="row">
@@ -659,7 +857,7 @@
                     <div class="col-md-3">
                         <h1>Company</h1>
                         <p>About Us</p>
-                        <p>Contact Us</p>
+                        <a style="color:white;text-decoration:none;"href="#contact"><p>Contact Us</p></a>
                         <p>Career</p>
                         <p>Affiliate</p>
                     </div>
@@ -681,16 +879,79 @@
 </section>
 
 
+<script>
+    
+        
 
 
-<script> 
-var blackWatchURL = document.getElementById("blackWatch").src;
-sessionStorage.setItem("blackWatchUrl", blackWatchURL);
- 
-function func(){
 
-            window.location = "product.html";
+function goToProduct(){
+    document.getElementById("single-product").classList.remove("hide");
+    document.getElementById("not-single-product").classList.add("hide")
 }
+
+function blackWatch(){
+    var blackWatchURL = document.getElementById("blackWatch").src;
+    document.getElementById("mainProduct").src = blackWatchURL
+    document.getElementById("lastStar").classList.add("fa-star-o");
+
+    document.getElementById("condition").innerText += "NEW"
+
+    document.getElementById("productName").innerText += "Black Watch"
+
+    document.getElementById("productCompany").innerText += " Curdden"
+
+    document.getElementById("productCode").innerText += "Product Code: IRS23452"
+    document.getElementById("productPrice").innerText += "USD $32.00"
+
+}
+function HollisterShirt(){
+    var HollisterShirtURL = document.getElementById("HollisterShirt").src;
+    document.getElementById("mainProduct").src = HollisterShirtURL
+    document.getElementById("lastStar").classList.add("fa-star-o");
+
+    document.getElementById("condition").innerText += "NEW"
+
+    document.getElementById("productName").innerText += "Hollister Shirt"
+
+    document.getElementById("productCompany").innerText += " Hollister"
+
+    document.getElementById("productCode").innerText += "Product Code: IRS25627"
+    document.getElementById("productPrice").innerText += "USD $23.00"
+}
+function YeezyGreen(){
+    var YeezyGreenURL = document.getElementById("YeezyGreen").src;
+    document.getElementById("mainProduct").src = YeezyGreenURL
+    document.getElementById("lastStar").classList.add("fa-star");
+
+    document.getElementById("condition").innerText += "NEW"
+    document.getElementById("productName").innerText += "Adidas Yeezy Boost"
+
+    document.getElementById("productCompany").innerText += " Adidas"
+
+    document.getElementById("productCode").innerText += "Product Code: IRS36781"
+    document.getElementById("productPrice").innerText += "USD $319.00"
+}
+function LeatherWatch(){
+    var LeatherWatchURL = document.getElementById("LeatherWatch").src;
+    document.getElementById("mainProduct").src = LeatherWatchURL
+    document.getElementById("lastStar").classList.add("fa-star-o");
+
+    document.getElementById("condition").innerText += "NEW"
+    document.getElementById("productCompany").innerText += " Curdden"
+    document.getElementById("productName").innerText += "Leather Watch"
+    document.getElementById("productCode").innerText += "Product Code: IRS23453"
+    document.getElementById("productPrice").innerText += "USD $23.00"
+    
+}
+
+productCompany
+            productName
+            condition
+            productCode
+            productPrice
+
 </script>
+<script src="script.js"></script>
 </body>
 </html>

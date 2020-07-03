@@ -3,9 +3,16 @@
 *{
     margin:0;
     padding:0;
+    outline:none;
+    box-sizing: border-box;
 }
 body{
     background: #f1f3f4;
+}
+.container{
+    max-width: 1140px;
+    margin:0 auto;
+    padding: 0 20px;
 }
 .top-nav-bar{
     height: 57px;
@@ -357,4 +364,123 @@ body{
 }
 .product-description hr{
     margin-bottom: 50px;
+}
+/* contact us styles start */
+
+#contact{
+    background: white;
+    padding: 4rem 0 8rem;
+    font-size:1rem;
+}
+#contact h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#form-container{
+    width:58%;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    padding:3rem;
+    height: 0%;
+}
+#form-container h3{
+    color:black;
+    margin-bottom: 2rem;
+}
+#form-container label{
+    display:block;
+    margin-top: 1rem;
+    color:black;
+}
+#form-container input, 
+#form-container textarea{
+    display:block;
+    margin-top: 1rem;
+    padding:10px;
+    color:black;
+    border-radius: 20px;
+    border:1px solid #ced4da;
+    box-sizing: border-box;
+    height:43px;
+    width:100%;
+    font-size: 1rem;
+    color:#495057;
+}
+#form-container textarea{
+    height:170px;
+    margin-bottom:2rem;
+    resize:none;
+}
+#address-container{
+    width:38%;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    padding:1.5rem;
+    height:0%;
+}
+#address-container label{
+    margin-top: 2rem;
+    display: block;
+}
+#address-container label:first-child{
+    margin-top: 0;
+}
+#address-container address{
+    margin-bottom: 1.5rem;
+    font-style: normal;
+}
+#address-container a{
+text-decoration: none;
+color:  #1ab2ff;
+}
+#address-container a:hover{
+    text-decoration: underline;
+    }
+.submit{
+    background:  #1ab2ff;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius: 30px;
+    padding:10px 30px;
+    line-height: 1.5;
+    border:3px solid #1ab2ff ;
+    cursor: pointer;
+}
+.submit:hover{
+    color:#1ab2ff;
+    background:  white;
+}   
+.flex{
+    display:flex;
+    justify-content:space-between;
+}
+/* contact us styles end */
+@media (max-width: 767px) {
+    #contact .flex {
+        flex-wrap: wrap;
+    }
+
+    #form-container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    #address-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 500px) {
+#contact {
+    padding: 4rem 0;
+}
+
+#contact h2 {
+    margin-bottom: 2rem;
+}
+
+#form-container {
+    padding: 1.5rem;
+}
 }

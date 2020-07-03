@@ -1,5 +1,4 @@
 
-
 setTimeout(function() { blackToGreen(); }, 3000);
 function openmenu(){
     document.getElementById("side-menu").style.display="block";
