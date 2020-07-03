@@ -59,14 +59,20 @@ body{
     display:inline-flex;
     float:right;
 }
-.menu-bar ul li{
-    border-left: 1px solid white;
+.menu-bar ul li,.menu-bar ul button{
+    border-left: none;
+    outline: none;
+    border-right: 1px solid white;
+    border-bottom: none;
+    color:white;
+    border-top: none;
     list-style-type: none;
     padding:15px 35px;
     text-align: center;
     background-color: #1ab2ff;
     cursor: pointer;
 }
+
 .menu-bar ul li a{
     font-size: 16px;
     font-weight: normal;
@@ -225,37 +231,6 @@ body{
 .product-top img{
     width:100%;
 }
-.overlay-right{
-    display: block;
-    opacity:0;
-    position: absolute;
-    top:10%;
-    margin-left:0;
-    width:70px;
-}
-.overlay-right .fa{
-    cursor: pointer;
-    background: white;
-    color:black;
-    font-size: 20px;
-    width:35px;
-    height:35px;
-    padding:7px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.overlay-right .btn-secondary{
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-.product-top:hover .overlay-right{
-    opacity:1;
-    margin-left: 5%;
-    transition: 0.5s;
-} 
-
-
 .product-bottom .fa{
     color:#1ab2ff;
     font-size: 10px;
@@ -324,9 +299,11 @@ body{
 .new-arrival{
     background: green;
     color:white;
-    width:50px;
+    width:70px;
+    border-radius: 20px;
     font-weight: bold;
     margin-top:20px;
+
 }
 .col-md-7 h2{
     color:#555;
