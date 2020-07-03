@@ -129,12 +129,14 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <img src="images/black.jpg" class="" id="black" alt="">
-                <img src="images/green.jpg" class="hide" id="green" alt="">
-                <img src="images/yellow.jpg" class="hide" id="yellow" alt="">
-                <img src="images/purple.jpg" class="hide" id="purple" alt="">
-                <img src="images/red.jpg" class="hide" id="red" alt="">
-                <img src="images/white.jpg" class="hide" id="white" alt="">
+          
+                <a href="#navHelp" onclick="goToProduct(), iPhone11()"><img src="images/black.jpg" class="" id="black" alt=""></a>
+                <a href="#navHelp" onclick="goToProduct(), iPhone11()"><img src="images/green.jpg" class="hide" id="green" alt=""></a>
+                <a href="#navHelp" onclick="goToProduct(), iPhone11()"><img src="images/yellow.jpg" class="hide" id="yellow" alt=""></a>
+                <a href="#navHelp" onclick="goToProduct(), iPhone11()"><img src="images/purple.jpg" class="hide" id="purple" alt=""></a>
+                <a href="#navHelp" onclick="goToProduct(), iPhone11()"><img src="images/red.jpg" class="hide" id="red" alt=""></a>
+                <a href="#navHelp" onclick="goToProduct(), iPhone11()"><img src="images/white.jpg" class="hide" id="white" alt=""></a>
+
                 <div class="product-bottom text-center">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -146,7 +148,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="images/yeez.jpg" alt="">
+               <a href="#navHelp" onclick="goToProduct(), yeezyBoost()"> <img id="yeezyBoost" src="images/yeez.jpg" alt=""></a>
                 <div class="product-bottom text-center">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -158,7 +160,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="images/supreme.jpg" alt="">
+                <a href="#navHelp" onclick="goToProduct(), supremeSweatShirt()"><img id="supremeSweatShirt" src="images/supreme.jpg" alt=""></a>
                 <div class="product-bottom text-center">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -881,76 +883,6 @@
 
 <script>
     
-        
-
-
-
-function goToProduct(){
-    document.getElementById("single-product").classList.remove("hide");
-    document.getElementById("not-single-product").classList.add("hide")
-}
-
-function blackWatch(){
-    var blackWatchURL = document.getElementById("blackWatch").src;
-    document.getElementById("mainProduct").src = blackWatchURL
-    document.getElementById("lastStar").classList.add("fa-star-o");
-
-    document.getElementById("condition").innerText += "NEW"
-
-    document.getElementById("productName").innerText += "Black Watch"
-
-    document.getElementById("productCompany").innerText += " Curdden"
-
-    document.getElementById("productCode").innerText += "Product Code: IRS23452"
-    document.getElementById("productPrice").innerText += "USD $32.00"
-
-}
-function HollisterShirt(){
-    var HollisterShirtURL = document.getElementById("HollisterShirt").src;
-    document.getElementById("mainProduct").src = HollisterShirtURL
-    document.getElementById("lastStar").classList.add("fa-star-o");
-
-    document.getElementById("condition").innerText += "NEW"
-
-    document.getElementById("productName").innerText += "Hollister Shirt"
-
-    document.getElementById("productCompany").innerText += " Hollister"
-
-    document.getElementById("productCode").innerText += "Product Code: IRS25627"
-    document.getElementById("productPrice").innerText += "USD $23.00"
-}
-function YeezyGreen(){
-    var YeezyGreenURL = document.getElementById("YeezyGreen").src;
-    document.getElementById("mainProduct").src = YeezyGreenURL
-    document.getElementById("lastStar").classList.add("fa-star");
-
-    document.getElementById("condition").innerText += "NEW"
-    document.getElementById("productName").innerText += "Adidas Yeezy Boost"
-
-    document.getElementById("productCompany").innerText += " Adidas"
-
-    document.getElementById("productCode").innerText += "Product Code: IRS36781"
-    document.getElementById("productPrice").innerText += "USD $319.00"
-}
-function LeatherWatch(){
-    var LeatherWatchURL = document.getElementById("LeatherWatch").src;
-    document.getElementById("mainProduct").src = LeatherWatchURL
-    document.getElementById("lastStar").classList.add("fa-star-o");
-
-    document.getElementById("condition").innerText += "NEW"
-    document.getElementById("productCompany").innerText += " Curdden"
-    document.getElementById("productName").innerText += "Leather Watch"
-    document.getElementById("productCode").innerText += "Product Code: IRS23453"
-    document.getElementById("productPrice").innerText += "USD $23.00"
-    
-}
-
-productCompany
-            productName
-            condition
-            productCode
-            productPrice
-
 </script>
 <script src="script.js"></script>
 </body>
