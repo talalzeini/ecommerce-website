@@ -227,6 +227,7 @@ body{
     margin-top: -4px;
     margin-left: 170px;
 }
+
 .product-top img{
     width:100%;
 }
@@ -276,7 +277,7 @@ body{
 .footer p{
     font-size:12px;
 }
-.copyright{ 
+.copyright{
     margin-bottom: -80px;
     text-align: center;
     font-size: 15px;
@@ -369,7 +370,7 @@ body{
     margin-top: 1rem;
     color:black;
 }
-#form-container input, 
+#form-container input,
 #form-container textarea{
     display:block;
     margin-top: 1rem;
@@ -427,7 +428,7 @@ color:  #1ab2ff;
 .submit:hover{
     color:#1ab2ff;
     background:  white;
-}   
+}
 .flex{
     display:flex;
     justify-content:space-between;
